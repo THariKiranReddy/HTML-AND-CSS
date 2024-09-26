@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age" type="number" placeholder="enter your age" value="">
+    <button onClick="checkAge()">Check Eligibility</button> 
+    <p id="out">Show the Person is Eligible or Not here...</p>
+</body>
+</html>
+<script>
+    function checkAge() {
+        let num=document.getElementById("age").value;
+        if(num>18) {
+            document.getElementById("out").innerText = "You are Eligible";
+        }
+        else if(num==18) {
+            document.getElementById("out").innerText = "Just Eligible";
+        }
+        else {
+            document.getElementById("out").innerText = "Not Eligible";
+        }
+
+    }
+</script>
