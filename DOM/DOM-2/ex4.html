@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:300px;
+            background-color:teal;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<script>
+    let gym = document.querySelector("div");
+    gym.addEventListener("mouseenter",changeBackground);
+    function changeBackground() {
+        document.querySelector("div").style.backgroundColor="red";
+        document.querySelector("div").style.cursor="pointer";
+        console.log("mouse Entered");
+    }
+    gym.addEventListener("mouseleave",defaultBackground);
+    function defaultBackground(){
+
+        document.querySelector("div").style.backgroundColor="teal";
+        console.log("mouse Leaved");
+    }
+</script>

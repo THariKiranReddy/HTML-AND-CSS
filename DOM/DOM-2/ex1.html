@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head-1">heading</h1>
+    <div class="div-1">div</div>
+    <h1 class="head-2">head</h1>
+    <h1 class="head-2">head</h1>
+    <h2>head-3</h2>
+    <h2>head-3</h2>
+    <h2>head-4</h2>
+    <h2>head-3</h2>
+
+
+</body>
+</html>
+<script>
+    let man = document.getElementById("head-1");
+    console.log(man);
+    let fan = document.getElementsByClassName("head-1");
+    console.log(fan);
+    let van = document.getElementsByTagName("h2");
+    console.log(van);
+    for(let i=0;i<=van.length;i++){
+        document.getElementsByTagName("h2");
+        console.log(van[i]);
+        van[0].style.color="red";
+
+    }
+
+</script>

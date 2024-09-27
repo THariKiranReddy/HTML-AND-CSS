@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="tag">hello</h1>
+    <h2 class="h2">world</h2>
+    <h2>world</h2>
+    <h2 class="h2">world</h2>
+    <h2>world</h2>
+    <button>Button</button>
+</body>
+</html>
+<script>
+    let cok = document.querySelector("#tag");
+    cok.addEventListener("click",firstClick);
+    function firstClick(){
+        console.log("some one clicked me");
+    }
+    document.querySelector("button").addEventListener("click", history);
+    function history(){
+        let num=document.querySelector("button");
+        console.log("running faster");
+        num.style.backgroundColor="red";
+        num.style.color="white";
+    }
+    console.log(document.querySelectorAll("h2"));
+</script>

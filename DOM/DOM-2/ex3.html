@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #enter{
+            display:flex;
+        }
+        #enter>div{
+            background-color: red;
+            padding:20px;
+            margin:20px;
+            height:20px;
+            width:30px;
+            align-items:center;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="enter">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
+<script>
+    let won = document.querySelectorAll("#enter>div");
+    won.forEach(function(element){
+        document.addEventListener("click",Entertain);
+    });
+    function Entertain(){
+        console.log(event.target.innerText);
+    }
+</script>
